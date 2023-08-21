@@ -1,0 +1,390 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body{
+	font-family: 'Poppins', sans-serif;
+	margin: 0 !important;
+	padding: 0 !important;
+}
+
+body::-webkit-scrollbar{
+    display: none;
+  }
+
+.header-atas, #footer{
+	background-color: #D7F4E6;	
+}
+
+.header-atas a, .footer-list a{
+	font-size: 13px !important;
+	cursor: default;
+	color: #3B3B3B;
+}
+
+.header-atas a:hover{
+	color: #3B3B3B;;
+}
+
+.header-navbar a, .footer a{
+	color: #21784E !important;
+}
+
+.header-navbar a:hover{
+	color: #21784E;
+	font-weight: bold;
+}
+
+#testimoni .container{
+	background-color: #D7F4E6;
+}
+
+.title-testi h4{
+	color: #024C5A;
+}
+
+.title-testi p{
+	color: #024C5A;
+	font-weight: medium;
+}
+
+#komunitas .container{
+	background-color: #21784E;
+	border-bottom-right-radius: 160px !important;
+}
+
+#komunitas p{
+	font-size: 13px;
+}
+
+.btn-outline-light:hover{
+	color: #21784E;
+	font-weight: bold;
+}
+
+#galeri-foto h4,  #galeri-video h4{
+	color: #024C5A;
+}
+
+#galeri-foto a,  #galeri-video a{
+	color: #024C5A;
+	text-decoration: none;
+}
+
+#galeri-foto a:hover, #galeri-video a:hover{
+	font-weight: bold;
+}
+
+/*.thumbnail {
+    position: relative;
+}
+
+.caption {
+    position: absolute;
+    top: 70%;
+    left: 0;
+    width: 100%;
+}
+
+.caption p{
+	color: #ffffff;
+}*/
+
+.caption {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+}
+.prev-foto{
+	overflow: hidden;
+}
+
+.prev-foto img {
+    transition: 0.5s all ease-in-out;
+}
+     
+.prev-foto:hover img {
+    transform: scale(1.25);
+}
+
+.footer ul{
+	list-style-type: none;
+}
+
+.footer h5,h4,p{
+	color: #165034;
+	font-weight: bold;
+}
+
+.footer-logo{
+	max-height: 40px;
+}
+
+.footer-list p{
+	font-size: 13px;
+}
+
+#footer-bawah{
+	background-color: #21784E;
+}
+
+#footer-bawah p{
+	font-size: 12px;
+	color: white;
+	font-weight: normal;
+}
+
+#galeri-foto img{
+	width: 100%;
+}
+
+#galeri-foto .card-image{
+	max-height: 130px;
+}
+
+
+#testimoni .carousel-inner{
+    padding: 1em;
+}
+#testimoni .card{
+    margin: 0 .5em;
+    background-color: #038199;
+}
+#testimoni .carousel-control-prev, .carousel-control-next{
+    background-color: #e1e1e1;
+    width: 6vh;
+    height: 6vh;
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#testimoni .card p, #testimoni .card small{
+  color: white;
+}
+
+.container .video-container{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.container .video-container .video{
+  height: 250px;
+  width: 350px;
+  border-radius: 5px;
+  box-shadow: 0 3px 20px rgba(0, 0, 0, .7);
+  cursor: pointer;
+  overflow: hidden;
+}
+
+
+.container .video-container .video img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  transition: .2s linear;
+}
+
+.container .video-container .video:hover img{
+  transform: scale(1.1);
+}
+
+.container .popup-video{
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  background: rgba(0, 0, 0, .8);
+  height: 100%;
+  width: 100%;
+  display: none;
+}
+
+.container .popup-video iframe{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 5px;
+  border: 3px solid #fffff;
+  object-fit: cover;
+}
+
+.container .popup-video span{
+  position: absolute;
+  top: 40px;
+  right: 20px;
+  font-size: 50px;
+  color: white;
+  font-weight: bolder;
+  z-index: 100;
+  cursor: pointer;
+}
+
+.popup-video::-webkit-scrollbar{
+    display: none;
+  }
+
+#komentar .komentar {
+    background-color: #fff;
+    border-color: #D4D4D4;
+}
+
+#komentar .form-control {
+    height: 48px;
+    border-radius: 25px
+}
+
+#komentar .form-control:focus {
+    color: #495057;
+    background-color: #fff;
+    border-color: #35b69f;
+    outline: 0;
+    box-shadow: none;
+    text-indent: 10px
+}
+
+.add_img{
+  text-decoration: none;
+  color: #2DA169;
+}
+
+.add_img:hover{
+  color: #21784E;
+  font-weight: bold;
+}
+
+#komentar small{
+  color: #3B3B3B;
+}
+
+.text-komentar{
+  font-size: 14px;
+  font-weight: medium;
+  color: #3B3B3B;
+}
+
+.text-baca{
+  text-decoration: none;
+  color: #3B3B3B;
+}
+
+.text-baca:hover{
+  font-weight: bold;
+  color: #3B3B3B;
+}
+
+.scrollbar-deep-purple::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+    background-color: #F5F5F5;
+    border-radius: 10px;
+}
+
+.scrollbar-deep-purple::-webkit-scrollbar {
+    width: 12px;
+    background-color: #F5F5F5;
+}
+
+.scrollbar-deep-purple::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+    background-color: #545454;
+}
+
+.scrollbar-deep-purple {
+    scrollbar-color: #545454 #F5F5F5;
+}
+
+.thin::-webkit-scrollbar {
+    width: 6px;
+}
+
+.scroll {
+    height: 500px;
+    position: relative;
+    overflow-y: scroll;
+}
+
+.foto{
+  margin-bottom: 10px;
+}
+
+.container .foto-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.container .foto-container .foto{
+  height: 150px;
+  width: 250px;
+  border-radius: 5px;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+
+.container .foto-container .foto img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  transition: .2s linear;
+}
+
+.container .foto-container .foto:hover img{
+  transform: scale(1.1);
+}
+
+@media (max-width:768px){
+  .container .popup-video iframe{
+    width: 95%;
+  }
+}
+
+@media (min-width: 992px) {
+  #testimoni .carousel-inner {
+    display: flex;
+  }
+  #testimoni .carousel-item {
+    margin-right: 0;
+    flex: 0 0 33.333333%;
+    display: block;
+  }
+}
+
+@media (min-width: 767px) {
+  #galeri-foto .card-image{
+    max-height: auto;
+  }
+}
+
+#login .card .card-login{
+  background-color: #21784E;
+}
+
+#login .card-right{
+  border: none;
+  background-color: #EDEDED;
+}
+
+#login .card-form{
+  border: none;
+  background-color: #EDEDED;
+}
+
+#login .btn-login{
+  background-color: #21784E;
+  color: white;
+  font-weight: bold;
+}
+
+#login .btn-login:hover{
+  background-color: #165034;
+}
+
+#login .card-form{
+  color: #025969;
+  font-weight: bold;
+}
