@@ -33,6 +33,10 @@ body::-webkit-scrollbar{
 	font-weight: bold;
 }
 
+.btn-outline-success:hover{
+  color: #fff !important;
+}
+
 #testimoni .container{
 	background-color: #D7F4E6;
 }
