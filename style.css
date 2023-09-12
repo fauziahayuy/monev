@@ -37,6 +37,8 @@ body::-webkit-scrollbar{
   color: #fff !important;
 }
 
+/*testimoni*/
+
 #testimoni .container{
 	background-color: #D7F4E6;
 }
@@ -50,6 +52,69 @@ body::-webkit-scrollbar{
 	font-weight: medium;
 }
 
+#testimoni .carousel-inner{
+    padding: 1em;
+}
+#testimoni .card{
+    margin: 0 .5em;
+    background-color: #038199;
+}
+#testimoni .carousel-control-prev, .carousel-control-next{
+    background-color: #e1e1e1;
+    width: 6vh;
+    height: 6vh;
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#testimoni .card p, #testimoni .card small{
+  color: white;
+}
+
+#testimoni .card p{
+  font-weight: normal;
+}
+
+#testimoni .wrapper .owl-prev,.wrapper .owl-next{
+    position: absolute;
+    top: 30%;
+    font-size: 28px !important;
+    color: white !important;
+    background-color: #D4D4D4 !important;
+    width: 40px;
+    height: 40px;
+    border-radius: 100% !important;
+}
+
+#testimoni .wrapper .owl-prev b,.wrapper .owl-next b{
+    position: relative;
+    top: -2px;
+}
+
+#testimoni .wrapper .owl-prev b{
+    left: -2px;
+}
+
+#testimoni .wrapper .owl-next b{
+    right: -2px;
+}
+
+#testimoni .wrapper .owl-prev:hover,.wrapper .owl-next:hover{
+    color: #D4D4D4 !important;
+    background-color: white !important;
+}
+
+#testimoni .wrapper .owl-next{
+    right: -15px;
+}
+
+#testimoni .wrapper .owl-prev{
+    left: -15px;
+}
+
+/*testimoni*/
+
 #komunitas .container{
 	background-color: #21784E;
 	border-bottom-right-radius: 160px !important;
@@ -57,6 +122,10 @@ body::-webkit-scrollbar{
 
 #komunitas p{
 	font-size: 13px;
+}
+
+#komunitas .wrapper .owl-nav{
+    color: white;
 }
 
 .btn-outline-light:hover{
@@ -142,27 +211,6 @@ body::-webkit-scrollbar{
 
 #galeri-foto .card-image{
 	max-height: 130px;
-}
-
-
-#testimoni .carousel-inner{
-    padding: 1em;
-}
-#testimoni .card{
-    margin: 0 .5em;
-    background-color: #038199;
-}
-#testimoni .carousel-control-prev, .carousel-control-next{
-    background-color: #e1e1e1;
-    width: 6vh;
-    height: 6vh;
-    border-radius: 50%;
-    top: 50%;
-    transform: translateY(-50%);
-}
-
-#testimoni .card p, #testimoni .card small{
-  color: white;
 }
 
 .container .video-container{

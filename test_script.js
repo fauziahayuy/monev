@@ -69,4 +69,29 @@ $('#myModal').on('hide.bs.modal', function (e) {
 // document ready  
 });
 
+/*carousel testimoni*/
+$(".owl-carousel").owlCarousel({
+  autoplay: true,
+  autoplayhoverpause: true,
+  autoplaytimeout: 200,
+  items: 2,
+  nav: true,
+  navText:["<b>🢐</b>","<b>🢒</b>"],
+  loop: true,
+  responsive:{
+    0:{
+      items:1
+    },
+    600:{
+     items:1,
+    },
+    800:{
+      items:2,
+    },
+    1200:{
+      items:2,
+    }    
+  }
+});
+
 

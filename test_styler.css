@@ -159,7 +159,7 @@ body{
     background:#ebeef0;
 }
 
-.img-sm {
+/*.img-sm {
     width: 46px;
     height: 46px;
 }
@@ -254,4 +254,44 @@ body{
 
 .mar-top {
     margin-top: 15px;
+}*/
+
+.wrapper .owl-nav{
+    color: white;
+}
+
+.wrapper .owl-prev,.wrapper .owl-next{
+    position: absolute;
+    top: 30%;
+    font-size: 32px !important;
+    background-color: #D4D4D4 !important;
+    width: 50px;
+    height: 50px;
+    border-radius: 100% !important;
+}
+
+.wrapper .owl-prev b,.wrapper .owl-next b{
+    position: relative;
+    top: -3px;
+}
+
+.wrapper .owl-prev b{
+    left: -2px;
+}
+
+.wrapper .owl-next b{
+    right: -2px;
+}
+
+.wrapper .owl-prev:hover,.wrapper .owl-next:hover{
+    color: #D4D4D4 !important;
+    background-color: white !important;
+}
+
+.wrapper .owl-next{
+    right: -40px;
+}
+
+.wrapper .owl-prev{
+    left: -40px;
 }
