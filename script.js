@@ -3,7 +3,6 @@ $('[data-fancybox="gallery"]').fancybox({
   buttons: [
     "slideShow",
     "thumbs",
-    "zoom",
     "fullScreen",
     "share",
     "close"
@@ -34,28 +33,3 @@ function hideShow(){
 }
 
 */
-
-/*carousel testimoni*/
-// $(".owl-carousel").owlCarousel({
-//   autoplay: true,
-//   autoplayhoverpause: true,
-//   autoplaytimeout: 200,
-//   items: 2,
-//   nav: true,
-//   navText:["<b>🢐</b>","<b>🢒</b>"],
-//   loop: true,
-//   responsive:{
-//     0:{
-//       items:1
-//     },
-//     600:{
-//      items:1,
-//     },
-//     800:{
-//       items:2,
-//     },
-//     1200:{
-//       items:2,
-//     }    
-//   }
-// });

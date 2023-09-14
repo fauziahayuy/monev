@@ -59,14 +59,6 @@ body::-webkit-scrollbar{
     margin: 0 .5em;
     background-color: #038199;
 }
-#testimoni .carousel-control-prev, .carousel-control-next{
-    background-color: #e1e1e1;
-    width: 6vh;
-    height: 6vh;
-    border-radius: 50%;
-    top: 50%;
-    transform: translateY(-50%);
-}
 
 #testimoni .card p, #testimoni .card small{
   color: white;
@@ -389,28 +381,6 @@ body::-webkit-scrollbar{
   transform: scale(1.1);
 }
 
-@media (max-width:768px){
-  .container .popup-video iframe{
-    width: 95%;
-  }
-}
-
-@media (min-width: 992px) {
-  #testimoni .carousel-inner {
-    display: flex;
-  }
-  #testimoni .carousel-item {
-    margin-right: 0;
-    flex: 0 0 33.333333%;
-    display: block;
-  }
-}
-
-@media (min-width: 767px) {
-  #galeri-foto .card-image{
-    max-height: auto;
-  }
-}
 
 #login .card .card-login{
   background-color: #21784E;
@@ -439,4 +409,27 @@ body::-webkit-scrollbar{
 #login .card-form{
   color: #025969;
   font-weight: bold;
+}
+
+/*@media (max-width:768px){
+  .container .popup-video iframe{
+    width: 95%;
+  }
+}*/
+
+@media (min-width: 992px) {
+  #testimoni .carousel-inner {
+    display: flex;
+  }
+  #testimoni .carousel-item {
+    margin-right: 0;
+    flex: 0 0 33.333333%;
+    display: block;
+  }
+}
+
+@media (min-width: 767px) {
+  #galeri-foto .card-image{
+    max-height: auto;
+  }
 }
