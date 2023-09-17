@@ -88,7 +88,7 @@
     </section>
     <!-- navbar -->
 
-    <!-- galeri foto -->
+    <!-- galeri video -->
     <section id="galeri-video">
       <div class="container mt-4">
         <div class="row mb-3">
@@ -97,14 +97,14 @@
           </div>
         </div>
         <div class="video-container mb-2">
-          <div class="video"><img src="https://img.youtube.com/vi/zomvO2Ii-kA/0.jpg" muted></div>
-          <div class="video"><img src="https://img.youtube.com/vi/8ca0xEJH9wY/0.jpg" muted></div>
-          <div class="video"><img src="https://img.youtube.com/vi/5ch94AaPZRQ/0.jpg" muted></div>
+          <div class="video"><img src="https://img.youtube.com/vi/EXakncBe-oU/0.jpg" muted> <p>Title</p></div>
+          <div class="video"><img src="https://img.youtube.com/vi/Qk3QzSgycWE/0.jpg" muted></div>
+          <div class="video"><img src="https://img.youtube.com/vi/TcMGIpjebso/0.jpg" muted></div>
         </div>
 
         <div class="popup-video">
           <span>&times;</span>
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/zomvO2Ii-kA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen muted autoplay controls></iframe>
+          <iframe width="600" height="400" src="https://www.youtube.com/embed/EXakncBe-oU?si=BhWPZide2-EmkToU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </div>
         <div class="row text-center mb-3">
           <div class="col">
@@ -189,20 +189,7 @@
   	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   	<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
 
-  	<script type="module">
-    document.querySelectorAll('.video-container img').forEach(vid => {
-      vid.onclick = () =>{
-        $(".header-navbar").removeClass("sticky-top");
-        document.querySelector('.popup-video').style.display = 'block';
-        document.querySelector('.popup-video img').src = vid.getAttribute('src');
-      }
-    });
-
-    document.querySelector('.popup-video span').onclick = () =>{
-      document.querySelector('.popup-video').style.display = 'none';
-      $(".header-navbar").addClass("sticky-top");
-    }
-  </script>
+    <script src="script.js"></script>
     
   </body>
 </html>

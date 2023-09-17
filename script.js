@@ -17,19 +17,19 @@ $(".btn-comment").click(function(){
   $(el).slideToggle();
 });
 
-/*var div = document.getElementById('comment');
-var display = 0;
+// Pop-up Video
+document.querySelectorAll('.video-container img').forEach(vid => {
+  vid.onclick = () =>{
+    let vid_src = $(vid).attr('src');
+    let vid_src_2 = vid_src.slice(0, vid_src.length-6).replace('vi', 'embed').replace('img', 'www');
 
-function hideShow(){
-  if(display === 1)
-  {
-    div.style.display = 'block';
-    display = 0;
+    $(".header-navbar").removeClass("sticky-top");
+    document.querySelector('.popup-video').style.display = 'block';
+    document.querySelector('.popup-video iframe').src = vid_src_2;
   }
-  else{
-    div.style.display = 'none';
-    display = 1;
-  }
+});
+
+document.querySelector('.popup-video span').onclick = () =>{
+  document.querySelector('.popup-video').style.display = 'none';
+  $(".header-navbar").addClass("sticky-top");
 }
-
-*/
