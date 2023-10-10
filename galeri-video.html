@@ -97,7 +97,7 @@
           </div>
         </div>
         <div class="video-container mb-2">
-          <div class="video"><img src="https://img.youtube.com/vi/EXakncBe-oU/0.jpg" muted> <p>Title</p></div>
+          <div class="video"><img src="https://img.youtube.com/vi/EXakncBe-oU/0.jpg" muted></div>
           <div class="video"><img src="https://img.youtube.com/vi/Qk3QzSgycWE/0.jpg" muted></div>
           <div class="video"><img src="https://img.youtube.com/vi/TcMGIpjebso/0.jpg" muted></div>
         </div>
@@ -190,6 +190,24 @@
   	<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
 
     <script src="script.js"></script>
+
+    <script type="module">
+      document.querySelectorAll('.video-container img').forEach(vid => {
+        vid.onclick = () =>{
+          let vid_src = $(vid).attr('src');
+          let vid_src_2 = vid_src.slice(0, vid_src.length-6).replace('vi', 'embed').replace('img', 'www');
+
+          $(".header-navbar").removeClass("sticky-top");
+          document.querySelector('.popup-video').style.display = 'block';
+          document.querySelector('.popup-video iframe').src = vid_src_2;
+        }
+      });
+
+      document.querySelector('.popup-video span').onclick = () =>{
+        document.querySelector('.popup-video').style.display = 'none';
+        $(".header-navbar").addClass("sticky-top");
+      }
+  </script>
     
   </body>
 </html>
